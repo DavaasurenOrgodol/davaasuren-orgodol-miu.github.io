@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .myDiv{
+            border:1px solid black;
+            display: flex;
+            gap:10px;
+        }
+        .myEDiv{
+            border:1px solid black;
+            display: flex;
+            gap:10px;
+        }
+        .myADiv{
+            border:1px solid black;
+            display: flex;
+            gap:10px;
+        }
+        .myfDiv{
+            border:1px solid black;
+            display: flex;
+            gap:10px;
+        }
+        .mymDiv{
+            border:1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Fixed width columns</label>
+    <div class="myDiv">
+        <div style="background-color: aqua;">Col1</div>
+        <div style="background-color: brown;">Col2</div>
+        <div style="background-color: green;">Col3</div>
+    </div>
+    <label>Fixed width columns</label>
+    <div class="myEDiv">
+        <div style="background-color: aqua; width: 40%;">Col1</div>
+        <div style="background-color: brown; width: 40%;">Col2</div>
+        <div style="background-color: green; width: 40%;">Col3</div>
+    </div>
+    <label>Auto sized columns( size according to content)</label>
+    <div class="myADiv">
+        <div style="background-color: aqua;">Col1</div>
+        <div style="background-color: brown; ">Col2</div>
+        <div style="background-color: green; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, culpa incidunt asperiores sunt minus consectetur est et odit soluta? Quasi nulla officiis ex quae sit delectus magnam, aperiam doloribus tempora?</div>
+        <div style="background-color: green; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat ex saepe, beatae quia necessitatibus ducimus aliquid quos voluptatibus deserunt, fuga voluptates enim sapiente, animi laudantium optio dicta culpa aspernatur!</div>
+        <div style="background-color: brown; ">Col3</div>
+    </div>
+    <label>Multiple Columns Compress Without flex-wrap</label>
+    <div class="myfDiv">
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown;  width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown; width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown; width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+    </div>
+    <label>Multiple Columns with flex-wrap</label>
+    <div class="mymDiv">
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown; width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown; width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+        <div style="background-color: aqua; width: 40px;">Col1</div>
+        <div style="background-color: brown; width: 40px;">Col2</div>
+        <div style="background-color: green; width: 40px;">Col3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .myDiv {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 40px 40px 40px;
+            gap:10px;
+        }
+        .myEDiv {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:10px;
+        }
+        .myADiv {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Fixed width columns</label>
+    <div class="myDiv">
+       <div style="background-color: aqua; ">Col1</div>
+       <div style="background-color: brown;">Col2</div>
+       <div style="background-color: green; ">Col3</div>
+    </div>
+    <label>Equal sized columns</label>
+    <div class="myEDiv">
+       <div style="background-color: aqua; ">Col1</div>
+       <div style="background-color: brown;">Col2</div>
+       <div style="background-color: green; ">Col3</div>
+    </div>
+    <label>Auto sized columns( size according to content)</label>
+    <div class="myADiv">
+       <div style="background-color: aqua; ">Col1</div>
+       <div style="background-color: brown;">Col2</div>
+       <div style="background-color: green; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo obcaecati quis optio amet commodi pariatur numquam at repellendus aut soluta dicta tenetur quam, vitae rerum asperiores, provident reiciendis expedita porro?</div>
+       <div style="background-color: green; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae corrupti nostrum ullam ipsa sequi obcaecati unde velit odit quos. Sunt impedit soluta labore dolore tempora quos sed cupiditate magnam.</div>
+       <div style="background-color: brown; ">Col3</div>
+    </div>
+</body>
+
+</html>
