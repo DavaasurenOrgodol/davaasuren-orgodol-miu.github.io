@@ -1,0 +1,107 @@
+<html>
+<header>
+    <style>
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-bar-start {
+            font-weight: 900;
+        }
+
+        .nav-bar-end {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            padding-right: 5px;
+        }
+
+        .content {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            padding: 15px;
+            background-color: lightgray;
+            gap:20px;
+        }
+        .left-content{
+            background-color: white;
+            padding: 10px;
+        }
+        .left-content-detail{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            justify-items: left;
+            margin-top: 10px;
+            gap:10px;
+        }
+        button{
+            background-color: blue;
+            color:white;
+            font-size: 11;
+            border:1px solid blue;
+            height: 30px;
+            width: 100px;
+            text-align: left;
+        }
+        .right-content{
+            background-color: #FFFFFF;
+            align-self: self-start;
+        }
+        .right-content-detail{
+            display: flex;
+            gap:10px;
+            margin-bottom: 5px;
+        }
+        hr{
+            border: 2px solid black;
+        }
+    </style>
+
+</header>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-bar-start">
+            Bidhan Tech Blog
+        </div>
+        <div class="nav-bar-end"><label>Home</label>
+            <label>Recent Posts</label>
+            <label>Blog</label>
+        </div>
+    </div>
+    <div>An Example Technology Blog</div>
+    <div class="content">
+        <div class="left-content">
+            <div>
+                An Example post
+            </div>
+            <div>
+                An Example post
+            </div>
+            <div class="left-content-detail">
+                <div><img src="flower.jpeg" alt="flower" width="100px;" style="object-fit: cover;"></div>
+                <div>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor mollitia saepe voluptates placeat eligendi voluptatum consequatur, facilis quisquam totam ex cumque inventore nesciunt doloremque quidem enim unde ducimus hic iste.</div>
+                    <div><button>Read More</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div>
+                Search
+            </div>
+            <hr>
+            <div class="right-content-detail">
+                <div>Search for</div>
+                <div style="border: 1px solid black; padding: 10 px;">Search</div>
+                <div style="border: 1px solid lightgray; background-color: lightgray; padding: 5px;">Search</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

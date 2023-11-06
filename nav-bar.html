@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<header>
+    <style>
+        body{
+            top:0;
+        }
+        .first-nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+        .first-nav-start{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            padding: 5px;
+        }
+        .label{
+            border: 1px solid red;
+            border-top-right-radius:10px;
+            border-top-left-radius: 10px; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: red; 
+        }
+        label{
+            padding: 2px;
+        }
+        .second-nav{
+            display: flex;
+        }
+        .first{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            gap:10px;
+            border: 1px solid blue;
+            text-align: center;
+            padding: 5px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</header>
+<body>
+    <div class="first-nav">
+        <div class="first-nav-start">
+            <label>label 1</label>
+            <label>label 2</label>
+            <label class="label">label 3</label>
+        </div>
+        <div>
+            <label>Logo</label>
+        </div>
+    </div>
+    <div class="second-nav" >
+        <div class="first">
+            <div><img src="flower.jpeg" alt="" width="50px;"></div>
+            <div>Hotels</div>
+        </div>
+        <div class="second">
+            
+            <img src="flower.jpeg" alt="" width="30px;">
+            Hotels
+        </div>
+    </div>
+</body>
